@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Equation Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3-Equation Solver</h1>
+        <div class="gradient-bar"></div>
+        <p>Enter coefficients for the equations:</p>
+        
+        <div class="equation">
+            <input type="number" id="a1" class="no-spinner" placeholder="a1">x + 
+            <input type="number" id="b1" class="no-spinner" placeholder="b1">y + 
+            <input type="number" id="c1" class="no-spinner" placeholder="c1">z = 
+            <input type="number" id="d1" class="no-spinner" placeholder="d1">
+        </div>
+        
+        <div class="equation">
+            <input type="number" id="a2" class="no-spinner" placeholder="a2">x + 
+            <input type="number" id="b2" class="no-spinner" placeholder="b2">y + 
+            <input type="number" id="c2" class="no-spinner" placeholder="c2">z = 
+            <input type="number" id="d2" class="no-spinner" placeholder="d2">
+        </div>
+        
+        <div class="equation">
+            <input type="number" id="a3" class="no-spinner" placeholder="a3">x + 
+            <input type="number" id="b3" class="no-spinner" placeholder="b3">y + 
+            <input type="number" id="c3" class="no-spinner" placeholder="c3">z = 
+            <input type="number" id="d3" class="no-spinner" placeholder="d3">
+        </div>
+
+        <div class="buttons">
+            <button onclick="solveEquations()">Solve</button>
+            <button onclick="resetFields()">Reset</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
